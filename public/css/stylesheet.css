@@ -1,11 +1,57 @@
-body {
-    color: black;
-    background-color: #EAC926;
+/* ---- SELECTORES GLOBALES ---- */
+
+*{
+    box-sizing: border-box;
     font-family: 'Roboto';
 }
 
-p, article{
-    font-size: 12px;
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris_oscuro:#666;
+    --gris_claro: #ebebeb;
+    --verde: #39b54a;
+    --negro: black;
+}
+
+/* ---- SELECTORES ETIQUETAS HTML ---- */
+
+body {
+    color: var(--negro);
+    background-color: var(--amarillo);
+}
+
+/* ---- SELECTORES HEADER ---- */
+
+.img-logo-mercado-liebre{
+    width: 25vw;
+}
+
+.cont-barra-busqueda , .cont-icono-lupa{
+    display: inline-block;
+}
+
+.barra-busqueda{
+    background-color: white;
+    display: inline-block;
+    height: 100%;
+    padding:3px;
+}
+
+.fas.fa-search{
+    color: white;
+    background-color: var(--azul);
+    padding: 5px;
+    height: 100%;
+}
+
+.fas.fa-hand-holding-usd , .cont-txt-mano p{
+    display: inline-block;
+}
+
+ul{    
+    padding: 0px;
 }
 
 ul li{
@@ -14,42 +60,55 @@ ul li{
 
 li a{
     text-decoration:none;
+    font-size: 12px;     
 }
 
-.precios{
+/* ---- SELECTORES MAIN ---- */
+
+main{
+    width: 90vw;
+    text-align: center;
+}
+
+p, article{
+    font-size: 12px;
+}
+
+ /* ---- SELECTORES FOOTER ---- */
+
+
+.precio{
     font-size: 18px;
 }
 
-.titulares{
+.titular{
     font-size: 24px;
     color: #666;
 }
 
-.descuentos{
+.descuento{
     font-size: 16px;
-    color: #39b54a;
+    color:var(--verde);
 }
 
-.descripciones{
+.descripcion{
     font-size: 16px;
 }
 
-.barra-busqueda{
-    background-color: white;
-    display: inline-block;
-    height: 20px;
-        
+.img-banner{
+    width: 100vw;
 }
 
-.fas.fa-search{
-    color: white;
-    background-color:#1259c3;
-    padding: 5px;
-    display: inline-block;
+
+
+.cont-burger-menu{
+    text-align: center;
 }
 
 .fas.fa-bars{
     color: white;
-    background-color:#1259c3;
+    background-color: var(--azul);
     padding: 5px;
+    border-radius: 5px;
 }
+
