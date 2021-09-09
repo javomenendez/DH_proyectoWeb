@@ -20,29 +20,22 @@
     <!------------INICIO HEADER-------------->
     <header>
         <!------------LOGO-------------->
-        <div class="cont-logo-mercado-liebre">
-            <img src="/img/logo-mercado-liebre.svg" class="img-logo-mercado-liebre" alt="logo-mercado-liebre">
-        </div>
-        <!------------BARRA BUSQUEDA-------------->            
-        <div class="cont-lupa-barra-busqueda">
-            <div class="cont-barra-busqueda">
-                <input class="barra-busqueda" type="text" placeholder="Ingresa tu busqueda">
-            </div>
-            <div class="cont-icono-lupa">
-                <i class="fas fa-search"></i>
-            </div>               
-        </div> 
-        <!------------TEXTO: COMPRA EN CUOTAS-------------->            
-        <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        <div class="navbar-top">
+            <img src="/img/logo-mercado-liebre.svg" class="img-logo" alt="logo-mercado-liebre">
+            <!------------BARRA BUSQUEDA-------------->
+            
+            <!------------TEXTO: COMPRA EN CUOTAS--------------> 
+             <p class="navbar-text"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>                   
         <!------------INICIO NAV-------------->
-        <nav>      
-            <ul class="ul-menu-navbar">
+        <nav class="navbar-bottom">      
+            <ul class="navbar-bottom-navoptions">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
-            <ul class="ul-menu-loginbar">
+            <ul class="navbar-bottom-loginbar">
                 <li><a href="#">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
@@ -66,36 +59,36 @@
         <section class="sect-ultima-visita">
             <h2 class="titular">Basado en tu última visita</h2>
             <div class="cont-producto-ultima-visita">
-                <article>
+                <article class="articulo">
                     <img class="img-producto" src="/img/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
-                    <div>
+                    <div class="detalle-producto">
                         <i class="fas fa-truck"></i>
                         <p class="precio">$6.770</p>
                         <p class="descuento">40% OFF</p>
                         <h3 class="descripcion">Cafetera Moulinex</h3> 
                     </div>
                 </article>
-                <article>
+                <article class="articulo">
                     <img class="img-producto" src="/img/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
-                    <div>
+                    <div class="detalle-producto">
                         <i class="fas fa-truck"></i>
                         <p class="precio">$230.000</p>
                         <p class="descuento">20% off</p>
                         <h3 class="descripcion">MacBook Pro 2019</h3>
                     </div>     
                 </article>
-                <article>
+                <article class="articulo">
                     <img class="img-producto" src="/img/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
-                    <div>
+                    <div class="detalle-producto">
                         <i class="fas fa-truck"></i>
                         <p class="precio">$70.500</p>
                         <p class="descuento">10% off</p>
                         <h3 class="descripcion">Samsung Galaxy S10</h3>
                     </div>                
                 </article>
-                <article>
+                <article class="articulo">
                     <img class="img-producto" src="/img/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
-                    <div>
+                    <div class="detalle-producto">
                         <i class="fas fa-truck"></i>
                         <p class="precio">$23.200</p>
                         <p class="descuento">5% off</p>
@@ -108,29 +101,41 @@
         <section class="sect-ofertas">
             <h2 class="titular">Sección de Ofertas</h2>
             <div class="cont-producto-ultima-visita">
-                <article>
-                    <img src="/img/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
-                    <p class="precios">$6.770</p>
-                    <p class="descuentos">40% OFF</p>
-                    <h3 class="descripciones">Cafetera Moulinex</h3>
+                <article class="articulo">
+                    <img class="img-producto" src="/img/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
+                    <div class="detalle-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$6.770</p>
+                        <p class="descuento">40% OFF</p>
+                        <h3 class="descripcion">Cafetera Moulinex</h3>
+                    </div>
                 </article>
-                <article>
-                    <img src="/img/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
-                    <p class="precios">$230.000</p>
-                    <p class="descuentos">20% off</p>
-                    <h3 class="descripciones">MacBook Pro 2019</h3>
+                <article class="articulo">
+                    <img class="img-producto" src="/img/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
+                    <div class="detalle-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$230.000</p>
+                        <p class="descuento">20% off</p>
+                        <h3 class="descripcion">MacBook Pro 2019</h3>
+                    </div>                
                 </article>
-                <article>
-                    <img src="/img/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
-                    <p class="precios">$70.500</p>
-                    <p class="descuentos">10% off</p>
-                    <h3 class="descripciones">Samsung Galaxy S10</h3>
+                <article class="articulo">
+                    <img class="img-producto" src="/img/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
+                    <div class="detalle-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$70.500</p>
+                        <p class="descuento">10% off</p>
+                        <h3 class="descripcion">Samsung Galaxy S10</h3>
+                    </div>    
                 </article>
-                <article>
-                    <img src="/img/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
-                    <p class="precios">$23.200</p>
-                    <p class="descuentos">5% off</p>
-                    <h3 class="descripciones">SmartTv Samsung 43"</h3>
+                <article class="articulo">
+                    <img class="img-producto" src="/img/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
+                    <div class="detalle-producto">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio">$23.200</p>
+                        <p class="descuento">5% off</p>
+                        <h3 class="descripcion">SmartTv Samsung 43"</h3>
+                    </div>
                 </article>
             </div>
         </section>
@@ -151,7 +156,7 @@
             <p>¿No te gusta?¡Devolvelo! En Mercado Liebre,no hay nada que no puedas hacer,porque estás siempre protegid@.</p>
         </article>
         <article>
-            <h2>Copyright © 1999-2020 MercadoLiebre S.R.L.</h2>
+            <h2 class="text-copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</h2>
         </article>
     </footer> 
     <!------------FIN FOOTER-------------->   
