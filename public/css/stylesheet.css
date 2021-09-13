@@ -15,67 +15,78 @@
     box-sizing: border-box;
     font-family: 'Roboto';
     margin: 0;
+    padding: 0px;
 }
 
 
 /* ---- SELECTORES ETIQUETAS HTML ---- */
 
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gris_claro);
+}
 header {
     background-color: var(--amarillo);
-    border: dotted red 5px;
+    
 }
 
 .navbar-top {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    border: dotted grey 5px; 
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    flex-grow: 1;
 }
 
 .img-logo {
-    max-width: 399px;
-    border: dotted black 5px;
+    width: 100%;
+}
+
+.form-busqueda{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-text {
-    font-size: 16px;
-    border: dotted violet 5px;
+    font-size: 12px;
+    text-align: center;
 }
 
-.navbar-busqueda-barra{
-    padding:3px;
+.barra-busqueda {
     border: none;
+    border-radius: 5px;
+    padding: 3px;
+    width: 70%;
+    
+}
+
+button {
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+.lupa-busqueda {
+    color: white;
+    background-color: var(--azul);
+    padding: 5px;
+    margin: auto;
     border-radius: 5px;
     
 }
 
-.lupa{
-    color: white;
-    background-color: var(--azul);
-    padding: 5px;
-    margin: 0 auto;
-    border-radius: 5px;
-}
-
-.navbar-bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar-bottom-navoptions , .navbar-bottom-loginbar {
-    display: flex;
-    justify-content: space-between;
-}
-
 header ul li a{
-    margin: 0px 15px;
-    font-size: 16px;
+    margin: 0px;
+    font-size: 12px;
 }
 
 .navbar-bottom ul{    
     padding: 0px;
     list-style: none;
-    border: dotted blue 5px;
 }
 
 li a{
@@ -87,63 +98,89 @@ li a{
     text-align: center;
 }
 
-.fas.fa-bars{
+.burguer{
     color: white;
     background-color: var(--azul);
     padding: 5px;
     border-radius: 5px;
     font-size: 30px;
+    margin: 0 auto;
+}
+
+.cont-banner {
+    padding: 0px;
+    margin: 0px;
 }
 
 .img-banner {
     width: 100%;
-    border: none;
+    margin: 0px;
 }
 
 
 main{
-    width: 90%;
-    margin: 0 auto;
-     
+   background-color: var(--gris_claro);
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   margin:auto;
 }
 
-p, article{
-    font-size: 12px;
-}
-
-.fas.fa-truck{
+.articulo div i{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    font-size: 16px;
     border-style: solid;
     border-color: var(--verde);
-    padding: 10px;
-    border-radius: 100px;
+    text-align: center;     
+    border-radius: 50%;
     color: var(--verde);
+
 }
 
 .articulo{
-    margin: 10px 0px 10px 0px;
-    background-color: var(--gris_claro);
-    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;           
 }
 
 .img-producto{
-    margin: 5px;
-
+    width: 100%;
+   
 }
 
 .detalle-producto{
-    margin: 10px 0px 10px 0px;
     border-top: solid 1px var(--gris_claro);
     background-color: white;
-    text-align: left;
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+
+}
+
+.cont-precio-desc{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .precio{
     font-size: 18px;
+    flex-grow: 0.3;
 }
 
 .titular{
     font-size: 24px;
     color: #666;
+    
 }
 
 .descuento{
@@ -153,7 +190,8 @@ p, article{
 
 .descripcion{
     font-size: 16px;
-    color:var(--gris_oscuro)
+    color:var(--gris_oscuro);
+    display: none;
 }
 
 footer {
@@ -163,5 +201,26 @@ footer {
 .text-copy {
     background-color: var(--gris_claro);
     padding: 15px 0px;
+}
+
+@media (min-width: 361px){
+    .articulo .descripcion {
+        display: block;
+    }
+    .articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
+}
+
+@media (min-width: 769px){
+    .cont-producto-ultima-visita {
+        display: flex;
+        justify-content: space-between;       
+
+    }
+    .articulo {
+        margin:5px;
+        flex-grow: .25;  
+    }
 }
 
