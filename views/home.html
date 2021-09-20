@@ -35,7 +35,7 @@
           />
         </div>
         <!------------BARRA BUSQUEDA-------------->
-        <form class="form-busqueda" action="" method="GET">
+        <form class="form-busqueda" action="/login" method="GET">
           <input
             class="barra-busqueda"
             type="text"
@@ -45,12 +45,12 @@
             <i class="fa fa-search lupa-busqueda"></i>
           </button>
         </form>
+        <!------------TEXTO: COMPRA EN CUOTAS-------------->
+        <p class="navbar-text">
+          <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
       </div>
-      <!------------TEXTO: COMPRA EN CUOTAS-------------->
-      <p class="navbar-text">
-        <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta
-        de crédito
-      </p>
       <!------------INICIO NAV-------------->
       <nav class="navbar-bottom">
         <ul class="navbar-bottom-navoptions">
@@ -61,15 +61,16 @@
         </ul>
         <ul class="navbar-bottom-loginbar">
           <li>
-            <a href="#">Crea tu cuenta <i class="far fa-id-card"></i></a>
+            <a href="/registro"
+              >Crea tu cuenta <i class="far fa-id-card"></i
+            ></a>
           </li>
           <li>
-            <a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
           </li>
           <li>
             <a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a>
           </li>
-          <li><a href="#">Mis compras</a></li>
         </ul>
       </nav>
       <!------------FIN NAV-------------->
@@ -105,7 +106,6 @@
                 <p class="precio">$6.770</p>
                 <p class="descuento">40% OFF</p>
               </div>
-
               <h3 class="descripcion">Cafetera Moulinex</h3>
             </div>
           </article>
@@ -121,7 +121,6 @@
                 <p class="precio">$230.000</p>
                 <p class="descuento">20% OFF</p>
               </div>
-
               <h3 class="descripcion">MacBook Pro 2019</h3>
             </div>
           </article>
@@ -152,7 +151,6 @@
                 <p class="precio">$23.200</p>
                 <p class="descuento">5% OFF</p>
               </div>
-
               <h3 class="descripcion">SmartTv Samsung 43"</h3>
             </div>
           </article>
@@ -170,8 +168,10 @@
             />
             <div class="detalle-producto">
               <i class="fas fa-truck"></i>
-              <p class="precio">$6.770</p>
-              <p class="descuento">40% OFF</p>
+              <div class="cont-precio-desc">
+                <p class="precio">$6.770</p>
+                <p class="descuento">40% OFF</p>
+              </div>
               <h3 class="descripcion">Cafetera Moulinex</h3>
             </div>
           </article>
@@ -183,8 +183,10 @@
             />
             <div class="detalle-producto">
               <i class="fas fa-truck"></i>
-              <p class="precio">$230.000</p>
-              <p class="descuento">20% OFF</p>
+              <div class="cont-precio-desc">
+                <p class="precio">$230.000</p>
+                <p class="descuento">20% OFF</p>
+              </div>
               <h3 class="descripcion">MacBook Pro 2019</h3>
             </div>
           </article>
@@ -196,8 +198,10 @@
             />
             <div class="detalle-producto">
               <i class="fas fa-truck"></i>
-              <p class="precio">$70.500</p>
-              <p class="descuento">10% OFF</p>
+              <div class="cont-precio-desc">
+                <p class="precio">$70.500</p>
+                <p class="descuento">10% OFF</p>
+              </div>
               <h3 class="descripcion">Samsung Galaxy S10</h3>
             </div>
           </article>
@@ -209,8 +213,10 @@
             />
             <div class="detalle-producto">
               <i class="fas fa-truck"></i>
-              <p class="precio">$23.200</p>
-              <p class="descuento">5% OFF</p>
+              <div class="cont-precio-desc">
+                <p class="precio">$23.200</p>
+                <p class="descuento">5% OFF</p>
+              </div>
               <h3 class="descripcion">SmartTv Samsung 43"</h3>
             </div>
           </article>
@@ -221,6 +227,7 @@
     <!------------INICIO FOOTER-------------->
     <footer>
       <article>
+        <i class="fas fa-credit-card"></i>
         <h2>Pagá con tarjeta o en efectivo</h2>
         <p>
           Con Mercado Liebre Cash,tenés cuotas sin interés con tarjeta o
@@ -228,6 +235,7 @@
         </p>
       </article>
       <article>
+        <i class="fas fa-gift"></i>
         <h2>Envío gratis desde $ 2.500</h2>
         <p>
           Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
@@ -235,17 +243,18 @@
         </p>
       </article>
       <article>
+        <i class="fas fa-user-shield"></i>
         <h2>Seguridad, de principio a fin</h2>
         <p>
           ¿No te gusta?¡Devolvelo! En Mercado Liebre,no hay nada que no puedas
           hacer,porque estás siempre protegid@.
         </p>
       </article>
-      <article>
-        <h2 class="text-copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</h2>
-      </article>
     </footer>
     <!------------FIN FOOTER-------------->
+    <article class="copyright">
+      <h2 class="text-copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</h2>
+    </article>
   </body>
   <!------------FIN BODY-------------->
 </html>
