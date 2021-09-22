@@ -19,11 +19,16 @@
 
 /* ---- SELECTORES ETIQUETAS HTML ---- */
 
+html,
+body {
+  height: 100%;
+}
 body {
   display: flex;
   flex-direction: column;
   background-color: var(--gris_claro);
 }
+
 header {
   background-color: var(--amarillo);
 }
@@ -159,7 +164,7 @@ main {
   transition: transform 0.5s;
 }
 
-.articulo div i:hover {
+.articulo:hover div i {
   transform: rotate(-90deg);
 }
 
@@ -203,13 +208,13 @@ main {
 }
 
 footer {
-  text-align: center;
-  background-color: white;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 footer article {
   margin: 15px 0px 15px 0px;
+  text-align: center;
 }
 
 footer article i {
@@ -220,10 +225,6 @@ footer article i {
 
 footer article i:hover {
   color: var(--verde);
-}
-
-.copyright {
-  text-align: center;
 }
 
 .text-copy {
@@ -262,6 +263,7 @@ footer article i:hover {
 }
 
 /* ---------- LOGIN.HTML ---------- */
+
 .form-login {
   width: 100%;
   text-align: center;
@@ -303,6 +305,7 @@ footer article i:hover {
   .navbar-top {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .logo {
@@ -371,7 +374,7 @@ footer article i:hover {
 @media (min-width: 769px) {
   .navbar-top {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row;
   }
 
@@ -383,5 +386,12 @@ footer article i:hover {
   footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer article {
+    width: 30%;
   }
 }
