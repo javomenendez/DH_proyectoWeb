@@ -336,6 +336,7 @@ footer article i:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 10px;
   }
   .navbar-bottom ul {
     display: flex;
