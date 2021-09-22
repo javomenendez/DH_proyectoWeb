@@ -236,8 +236,18 @@ footer article i:hover {
 /* ---------- REGISTER.HTML ---------- */
 
 .formulario {
-  width: 100%;
+  width: 50%;
   margin-top: 20px;
+  margin: 0 auto;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: var(--amarillo);
+  box-shadow: 10px 10px 5px -4px var(--gris_oscuro);
+}
+
+.formulario ul li label,
+.formulario ul li input {
+  font-size: 18px;
 }
 .form-registro {
   width: 100%;
@@ -252,14 +262,19 @@ footer article i:hover {
   list-style: none;
   padding: 3px;
 }
+.botones-register {
+  text-align: center;
+}
 
-.form-registro button {
+.botones-register button {
   border-radius: 5px;
   font-weight: bold;
   background-color: var(--celeste);
   color: white;
-  width: 100px;
+  width: 45%;
   height: 30px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 /* ---------- LOGIN.HTML ---------- */
@@ -290,6 +305,7 @@ footer article i:hover {
   color: white;
   width: 50%;
   height: 30px;
+  font-size: 18px;
 }
 .boton_enviar:hover {
   background-color: #0022aa;
